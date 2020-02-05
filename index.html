@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+​
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+​
+</head>
+<body>
+​
+<div class="jumbotron jumbotron-fluid">
+  <div class="containerJumbotronContainer">
+    <h1 class="display-4">Weather Dashboard</h1>
+  </div>
+</div>
+
+<div class="currentWeatherContainer">
+  <div class="card">
+    <!-- Current Weathers Card Body -->
+    <div class = "card-body">
+      <!-- Row 12 -->
+      <div class ="row">
+      <!-- Col Lg 2 | The search Form and Button List -->
+      <div class = "col-lg-2">
+        <form>
+          <div class="form-group" id="searchInputForm">
+            <input type="text" class="form-control" id="searchInput" placeholder="Enter a City">
+              <button class="btn btn-primary">Search</button>
+                <small id="cityHelp" class="form-text text-muted">Please Enter A City</small>
+          </div>
+        </form>
+        <!-- Saved Cities List -->
+        <ul class="text-left" id="savedCitiesList">
+        </ul>
+      </div>
+      <!-- Col Lg 10 -->
+      <div class = "col-lg-10">
+        <div>
+      <div class="card text-left">
+<!-- <div class="card-header">Featured</div> -->
+      
+<div class="card-body">
+  <h5 class="card-title" id="currentCity">...</h5>
+  <p class="card-text" id="currentTempature">...</p>
+  <p class="card-text" id="currentHumidity">...</p>
+  <p class="card-text" id="currentWindSpeed">...</p>
+  <p class="card-text" id="currentUVIndex">...</p>
+</div>
+<!-- <div class="card-footer text-muted">2 days ago</div> -->
+</div>
+<div class = "row">
+<div class = "col-lg-12">
+
+<div class ="card-header">5 Day Forecast</div>
+
+<div class = "row">
+
+<div class="card-deck">
+
+<div class="card">
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Card title</h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>                                       
+
+<div class="card">
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Card title</h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>                                       
+
+<div class="card">
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Card title</h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>                                       
+
+<div class="card">
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Card title</h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>                                       
+
+<div class="card">
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Card title</h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>                                       
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>    
+​
+
+​
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    
+    
+<!-- <script src="https://kit.fontawesome.com/d49b7a6f5d.js" crossorigin="anonymous"></script> -->
+    
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="./assets/javascript/script.js"></script>
+
+</body>
+</html>
