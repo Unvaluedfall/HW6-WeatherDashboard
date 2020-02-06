@@ -12,112 +12,81 @@
 ​
 </head>
 <body>
-​
+
+<!-- ​Jumbotron Heading -->
 <div class="jumbotron jumbotron-fluid">
-  <div class="containerJumbotronContainer">
+  <div class="container JumbotronContainer">
+    <!-- Title of Jumbotron -->
     <h1 class="display-4">Weather Dashboard</h1>
   </div>
 </div>
-
-<div class="currentWeatherContainer">
+<!-- The Entire Weather Container -->
+<div class="container currentWeatherContainer">
   <div class="card">
-    <!-- Current Weathers Card Body -->
     <div class = "card-body">
-      <!-- Row 12 -->
-      <div class ="row">
-      <!-- Col Lg 2 | The search Form and Button List -->
-      <div class = "col-lg-2">
-        <form>
-          <div class="form-group" id="searchInputForm">
-            <input type="text" class="form-control" id="searchInput" placeholder="Enter a City">
-              <button class="btn btn-primary">Search</button>
-                <small id="cityHelp" class="form-text text-muted">Please Enter A City</small>
+  <!-- Row 12 -->
+  <div class ="row">
+
+  
+  <!-- Col Lg 2 | The search Form and Button List -->
+  <div class = "col-lg-2">
+    <!-- The Input form and Button -->
+    <form>
+      <label for="searchInput" >Enter a City</label>
+      <div class="input-group" id="searchInputForm">
+        <input type="text" class="form-control" id="searchInput">
+          <div class="input-group-append">
+            <button class="btn btn-primary"></button>
           </div>
-        </form>
-        <!-- Saved Cities List -->
-        <ul class="text-left" id="savedCitiesList">
-        </ul>
       </div>
-      <!-- Col Lg 10 -->
-      <div class = "col-lg-10">
-        <div>
-      <div class="card text-left">
+    </form>
+    <!-- Saved Cities List -->
+    <ul class="text-left" id="savedCitiesList">
+    </ul>
+  </div>
+  
+  <!-- Col Lg 10 | The Main Display and the 5 Days under it -->
+  <div class = "col-lg-10">
+    <!-- Main Display -->
+    <div class="card text-left">
 <!-- <div class="card-header">Featured</div> -->
-      
+
 <div class="card-body">
-  <h5 class="card-title" id="currentCity">...</h5>
-  <p class="card-text" id="currentTempature">...</p>
-  <p class="card-text" id="currentHumidity">...</p>
-  <p class="card-text" id="currentWindSpeed">...</p>
-  <p class="card-text" id="currentUVIndex">...</p>
+<h5 class="card-title" id="currentCity">...</h5>
+<p class="card-text" id="currentTempature">...</p>
+<p class="card-text" id="currentHumidity">...</p>
+<p class="card-text" id="currentWindSpeed">...</p>
+<p class="card-text" id="currentUVIndex">...</p>
 </div>
 <!-- <div class="card-footer text-muted">2 days ago</div> -->
-</div>
-<div class = "row">
-<div class = "col-lg-12">
-
-<div class ="card-header">5 Day Forecast</div>
-
-<div class = "row">
-
-<div class="card-deck">
-
-<div class="card">
-<img src="..." class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-</div>
-</div>                                       
-
-<div class="card">
-<img src="..." class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-</div>
-</div>                                       
-
-<div class="card">
-<img src="..." class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-</div>
-</div>                                       
-
-<div class="card">
-<img src="..." class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-</div>
-</div>                                       
-
-<div class="card">
-<img src="..." class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title">Card title</h5>
-<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-</div>
-</div>                                       
+    </div>
 
 
+    
+    <div class = "row">
+      <div class = "col-lg-12">
+        <div class="card">
+  
+      <div class ="card-header">5 Day Forecast</div>
+  
+        <div class = "card-body">
+          <!-- <div class="card"> -->
 
-
-</div>
-
-</div>
-</div>
-</div>
+            <div class="card-deck" id="nextWeekHolder">
+            </div>
+          <!-- </div> -->
+          <!-- The Five Day  -->
         </div>
       </div>
       </div>
+                        
+
+    </div>
+    <!-- The Five Day forcast -->
+  </div>
+
+  </div>
+
     </div>
   </div>
 </div>    

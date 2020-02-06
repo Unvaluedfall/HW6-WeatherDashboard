@@ -1,8 +1,46 @@
-div.row{
-    padding: 15px;
+
+
+
+/* div.searchInputForm{
+    width: 200px;
+} */
+
+
+* {
+    box-sizing: border-box;
 }
 
+body {
+    font-size: 20px;
+    line-height: 32px;
+    color: #777777;
+    background-color: whitesmoke;
+}
 
+/* Classes */
 div.container{
+    width: 90%;
+    /* background: white; */
     margin: 0 auto 0 auto;
+    /* margin-top: 50px; */
+    /* padding: 20px; */
+    }
+
+div.dayCards{
+    font-size: 15px;
 }
+
+/* div.card-deck{
+    margin-left: 15px;
+} */
+
+
+/* Ids */
+ul#savedCitiesList{
+    font-size:15px;
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+
