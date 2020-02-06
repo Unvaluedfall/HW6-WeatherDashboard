@@ -47,7 +47,7 @@ function getTodaysWeather(searchInputVal){
     
 // console.log(searchInputVal)
 
-    var todaysWeatherURL = "http://api.openweathermap.org/data/2.5/weather?q=" + searchInputVal + "&APPID=84df449c8c088263e2e354a1926ed25a&units=imperial"
+    var todaysWeatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInputVal + "&APPID=84df449c8c088263e2e354a1926ed25a&units=imperial"
     
 
 $.ajax({
@@ -56,7 +56,7 @@ $.ajax({
 }).then(function(response){
 // console.log(response)
     var iconcode = response.weather[0].icon
-        var currentWeatherIcon = "http://openweathermap.org/img/w/" + iconcode + ".png";
+        var currentWeatherIcon = "https://openweathermap.org/img/w/" + iconcode + ".png";
 // console.log(iconcode)
         
     var currentWeatherIconEl = $("<img>");
@@ -86,7 +86,7 @@ $.ajax({
 
 
 
-        var fiveDayForecastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + response.name + "&appid=84df449c8c088263e2e354a1926ed25a&units=imperial";
+        var fiveDayForecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + response.name + "&appid=84df449c8c088263e2e354a1926ed25a&units=imperial";
 
         $.ajax({
             url: fiveDayForecastURL,
@@ -116,7 +116,7 @@ $.ajax({
                     nextWeekCardBodyTitle.text(fiveDayDateDay +"/"+ fiveDayDateMonth +"/"+ fiveDayDateYear);
 
                 var nextWeekCardBodyImg = $("<img>");
-                    nextWeekCardBodyImg.attr("src", "http://openweathermap.org/img/w/" + fiveDayForecastResponse.list[i].weather[0].icon + ".png")
+                    nextWeekCardBodyImg.attr("src", "https://openweathermap.org/img/w/" + fiveDayForecastResponse.list[i].weather[0].icon + ".png")
 
 
                 var nextWeekCardBodyTextTemp = $("<p>");
@@ -155,7 +155,7 @@ $.ajax({
 
             var uvIndexLat = response.coord.lat
             var uvIndexLon = response.coord.lon
-            var uvIndexURL = "http://api.openweathermap.org/data/2.5/uvi?appid=84df449c8c088263e2e354a1926ed25a&lat=" + uvIndexLat + "&lon=" + uvIndexLon;
+            var uvIndexURL = "https://api.openweathermap.org/data/2.5/uvi?appid=84df449c8c088263e2e354a1926ed25a&lat=" + uvIndexLat + "&lon=" + uvIndexLon;
             
             
             $.ajax({
